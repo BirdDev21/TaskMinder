@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Planner</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="shortcut icon" href="Task (1).png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>TaskMinder</h1>
+    <p>Go to my review site: </p>
+  </header>
+<div id="minigames">
+    <h2>Mini Games</h2>
+    <p>For study breaks</p>
+    <a href="minigame1.html" target="_blank">Snake Game</a>
+    
+</div>
+  <main>
+    <section class="session-form">
+      <h2>Add Study Session</h2>
+      <form id="study-session-form">
+        <label for="subject">Subject:</label >
+        <input type="text" id="subject" name="subject" required><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required><br>
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" name="duration" required><br>
+        <button type="submit">Add Session</button>
+      </form>
+    </section>
+    <section class="session-list">
+      <h2>Upcoming Study Sessions</h2>
+      <ul id="session-list">
+        <!-- Study sessions will be dynamically added here -->
+      </ul>
+      <button id="clear-sessions" onclick="">Clear All Sessions</button>
+    </section>
+  </main>
+
+  <aside class="todo-menu">
+    <button id="toggle-todo">Toggle To-Do List</button>
+    <div class="todo-list-container">
+      <input type="text" id="task-input" placeholder="Add a new task">
+      <button id="add-task">Add Task</button>
+      <ul id="task-list"></ul>
+    </div>
+  </aside>
+
+  
+
+  <div class="pomodoro-timer">
+    <h1>Polmadoro Timer</h1 >
+    <div class="timer-display" id="timer-display">25:00</div>
+    <button id="start-button">Start Pomodoro</button>
+    <button id="pause-button">Pause</button>
+  </div>
+  
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
